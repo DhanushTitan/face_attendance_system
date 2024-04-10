@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    <title>Add Student</title>
+</head>
+<body>
+    
+    
+<div class="container">
+    <div class="container1">
+        <div class="content">
+            <div class="image-box">
+                <!-- <img src="static/image/1.jpg" alt=""> -->
+                <img src="static/image/add/i-m-prepared-exam-very-well.jpg" alt="" class="form_img">
+            </div>
+            <form action="{{ url_for('add_student') }}" method="post">
+                <div class="topic">Add New Student</div>
+                <div class="input-box">
+                    <input type="text" name="student_id" value="" required>
+                    <label for="student_id">Enter your ID</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="name" value="" required>
+                    <label for="name">Enter your Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="major" value="" required>
+                    <label for="major">Enter your Major</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="start_year" value="" required>
+                    <label for="start_year">Enter your Joining Year</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="total_attendance" value="" required>
+                    <label for="total_attendance">Enter your Attendance</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="student_class" value="" required>
+                    <label for="student_class">Enter your Class</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="year" value="" required>
+                    <label for="year">Enter your Year</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="last_attendance" value="" required>
+                    <label for="last_attendance">Enter your Last Attendance</label>
+                </div>
+                
+                <div class="input-box">
+                    <input type="submit" onclick="success()" value="Add Student">
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script>
+        function success() {
+            alert('Student added successfully');
+        }
+    </script>
+</body>
+</html>

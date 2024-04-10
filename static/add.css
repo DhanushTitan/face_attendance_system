@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('image/add/background_img.jpg'); */
+    background-color: #031525;
+    padding-top: 20px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+
+}
+
+
+/*Form*/
+
+.container1 {
+    /* z-index: 12; */
+    max-width: 1050px;
+    width: 100%;
+    background: #000000a8;
+    border-radius: 12px;
+    margin: -30px auto 30px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.container1 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+.content .image-box {
+    max-width: 55%;
+}
+
+/* .content .image-box img {
+    width: 100%;
+    height: 100%;
+} */
+.form_img{
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.content .topic {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.content form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.content .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #162C46;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus,
+.content .input-box input:valid {
+    border-color: #000000;
+    background-color: #162C46;
+    color: white;
+}
+
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #d0cbcb;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus~label,
+.content .input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: rgb(255, 255, 255);
+    background: #162C46;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.content .message-box {
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 16px;
+    padding-top: 16px;
+    transition: all 0.3s ease;
+    
+}
+
+.content .message-box textarea:focus {
+    border-color: black;
+}
+
+.content .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    left: 18px;
+    top: 8px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.content .message-box textarea:focus~label {
+    left: 12px;
+    top: 0px;
+    color: white;
+    display: 14px;
+    background: #fff;
+}
+
+.content .input-box input[type="submit"] {
+    color: #fff;
+    background: #0842A0;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: #0842A0;
+}
+
+.content .input-box input[type="submit"]:hover {
+    background-color: #0842A0;
+}
+
+@media (max-width: 1000px) {
+    .content .image-box {
+        max-width: 70%;
+    }
+    .content {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .content .image-box {
+        display: none;
+    }
+    .content form {
+        width: 100%;
+        margin-left: 30px;
+    }
+}
+
+
+

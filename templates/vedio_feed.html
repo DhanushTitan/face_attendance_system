@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Stream</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(0, 0, 0);
+        }
+        .main{
+            height: 100%;
+            padding-left: 50px;
+        }
+        .main img{
+            padding: 50px;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <div class="main">
+        <h1 style="color: rgb(0, 0, 0); ">Camera Stream</h1>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480" />
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    </div>
+    <!-- Call the JavaScript function to redirect to home page -->
+    <script>
+        setTimeout(redirectHome, 60000); // Redirect after 60 seconds
+        function redirectHome() {
+            alert("Attendance marked successfully!");
+            window.location.href = "/";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #031525;
+    
+}
+.header{
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.card{
+    width: 70%;
+    height: 80vh;
+    border-radius: 5%;
+    background-color: #0D2136;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.767);
+    display: flex;
+    flex-direction: row;
+}
+.upload_image{
+    width: 90%;
+    height: 100%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    
+}
+.upload_card{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background-color: #0D2136;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80%;
+    
+}
+.upload_card_label{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.upload_card_input{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.upload_card_btn{
+    width: 80%;
+    height: 40px;
+    background-color: #0842A0;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn{
+    width:80%;
+    height: auto;
+    background-color: #0842A0;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+ 
+
+
+

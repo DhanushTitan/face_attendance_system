@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='student_view.css') }}">
+</head>
+<body class="bg">
+
+<div>
+    <h1 class="header">All Student Details</h1>
+</div>
+
+<div >
+    <table class="student_table">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Major</th>
+                <th>Start Year</th>
+                <th>Total Attendance</th>
+                <th>Class</th>
+                <th>Year</th>
+                <th>Last Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student_id, student in students.items() %}
+            <tr>
+                <td>{{ student_id }}</td>
+                {% if student %}
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.major }}</td>
+                    <td>{{ student.startYear }}</td>
+                    <td>{{ student.total_attendance }}</td>
+                    <td>{{ student. student_class }}</td>
+                    <td>{{ student.year }}</td>
+                    <td>{{ student.last_attendance }}</td>
+                {% else %}
+                    <td colspan="8">No student data available</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

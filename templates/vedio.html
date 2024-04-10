@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feed</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(255, 0, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Video Feed</h1>
+    {% if image_data %}
+        <!-- Display the image directly using the image data -->
+        <img src="data:image/png;base64,{{ image_data }}" width="640" height="480" alt="Video Feed">
+    {% else %}
+        <p>No image data available.</p>
+    {% endif %}
+</body>
+</html>
